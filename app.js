@@ -6,6 +6,11 @@ const app = Vue.createApp({
     },
     methods:{
        addNum(num){
+           if (this.counter < 37){
+               console.log("Not there yet"); 
+           }else{
+               console.log("Too much!"); 
+           }
            this.counter = this.counter + num;
        },
     }
